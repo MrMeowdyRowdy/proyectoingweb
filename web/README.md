@@ -13,3 +13,5 @@ Laravel es un marco de trabajo para aplicaciones web que aplica un sintaxis eleg
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting). 
 
 Laravel es accesible, poderoso y provee las herramientas necesarias para la creacion de grandes y robustas aplicaciones
+
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://www.netsolutions.com/insights/wp-content/uploads/2022/04/architecture-of-laravel-framework.webp" width="400" alt="Laravel Logo"></a></p>
