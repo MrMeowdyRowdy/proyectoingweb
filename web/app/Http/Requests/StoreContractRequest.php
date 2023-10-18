@@ -24,7 +24,7 @@ class StoreContractRequest extends FormRequest
         return [
             'clientId' => 'required|integer',
             'creation' => 'required',
-            'price' => 'required|float|min:0.01|max:10000'
+            'price' => 'required|decimal:2|min:0.01|max:10000'
         ];
     }
 }
