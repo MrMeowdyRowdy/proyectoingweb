@@ -40,6 +40,6 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-Route::resource('products', ProductController::class);
-Route::resource('contracts', ContractController::class);
-Route::resource('employees', EmployeeController::class);
+Route::resource('products', ProductController::class)->middleware('auth');
+Route::resource('contracts', ContractController::class)->middleware('auth');
+Route::resource('employees', EmployeeController::class)->middleware('auth');
