@@ -3,6 +3,9 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\ContractController;
 use Inertia\Inertia;
 
 /*
@@ -36,3 +39,7 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::resource('products', ProductController::class);
+Route::resource('contracts', ContractController::class);
+Route::resource('employees', EmployeeController::class);
