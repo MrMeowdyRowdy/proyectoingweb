@@ -6,6 +6,7 @@ use App\Http\Requests\StoreEmployeeRequest;
 use App\Http\Requests\UpdateEmployeeRequest;
 use App\Models\Employee;
 use Illuminate\View\View;
+use Illuminate\Http\RedirectResponse;
 
 class EmployeeController extends Controller
 {
