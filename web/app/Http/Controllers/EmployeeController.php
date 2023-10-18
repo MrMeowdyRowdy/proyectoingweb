@@ -86,7 +86,7 @@ class EmployeeController extends Controller
     {
         $sumaContratos = 0;
         $contratosPorEmp = [];
-        $contracts = Contract::with('employee')->whereHas('employee', function ($query) use( $request ) {
+        $contracts = Contract::whereHas('employee', function ($query) use( $request ) {
             $query->whereBetween('creation', [$request->begin, $request->end]);
         })->get();
 
