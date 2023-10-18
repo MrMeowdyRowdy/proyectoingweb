@@ -28,7 +28,6 @@
                     <tbody>
                         @forelse ($contratosPorEmp as $contrato)
                         <tr>
-                            <th scope="row">{{ $loop->iteration }}</th>
                             <td>{{ $contrato->idemp }}</td>
                             <td>{{ $contrato->employeeName }}</td>
                             <td>{{ $contrato->contPrice }}</td>
