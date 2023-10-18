@@ -19,20 +19,17 @@
                     <thead>
                       <tr>
                         <th scope="col">S#</th>
-                        <th scope="col">Código</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Cantidad</th>
+                        <th scope="col">Id Empleado</th>
+                        <th scope="col">Fecha Creación</th>
                         <th scope="col">Precio</th>
-                        <th scope="col">Acción</th>
                       </tr>
                     </thead>
                     <tbody>
                         @forelse ($contracts as $contract)
                         <tr>
                             <th scope="row">{{ $loop->iteration }}</th>
-                            <td>{{ $contract->code }}</td>
-                            <td>{{ $contract->name }}</td>
-                            <td>{{ $contract->quantity }}</td>
+                            <td>{{ $contract->employeeId }}</td>
+                            <td>{{ $contract->creation }}</td>
                             <td>{{ $contract->price }}</td>
                             <td>
                                 <form action="{{ route('contracts.destroy', $contract->id) }}" method="post">

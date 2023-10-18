@@ -17,37 +17,23 @@
             <div class="card-body">
 
                     <div class="row">
-                        <label for="code" class="col-md-4 col-form-label text-md-end text-start"><strong>Código:</strong></label>
+                        <label for="code" class="col-md-4 col-form-label text-md-end text-start"><strong>Id Empleado:</strong></label>
                         <div class="col-md-6" style="line-height: 35px;">
-                            {{ $contract->code }}
+                            {{ $contract->employeeId }}
                         </div>
                     </div>
 
                     <div class="row">
-                        <label for="name" class="col-md-4 col-form-label text-md-end text-start"><strong>Nombre:</strong></label>
+                        <label for="name" class="col-md-4 col-form-label text-md-end text-start"><strong>Fecha de creacion:</strong></label>
                         <div class="col-md-6" style="line-height: 35px;">
-                            {{ $contract->name }}
+                            {{ $contract->creation }}
                         </div>
                     </div>
 
                     <div class="row">
-                        <label for="quantity" class="col-md-4 col-form-label text-md-end text-start"><strong>Cantidad:</strong></label>
-                        <div class="col-md-6" style="line-height: 35px;">
-                            {{ $contract->quantity }}
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <label for="price" class="col-md-4 col-form-label text-md-end text-start"><strong>Precio:</strong></label>
+                        <label for="quantity" class="col-md-4 col-form-label text-md-end text-start"><strong>precio:</strong></label>
                         <div class="col-md-6" style="line-height: 35px;">
                             {{ $contract->price }}
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <label for="description" class="col-md-4 col-form-label text-md-end text-start"><strong>Descripcion:</strong></label>
-                        <div class="col-md-6" style="line-height: 35px;">
-                            {{ $contract->description }}
                         </div>
                     </div>
         
