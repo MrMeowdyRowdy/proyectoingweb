@@ -20,7 +20,6 @@
                 <table class="table table-striped table-bordered">
                     <thead>
                         <tr>
-                            <th scope="col">Numero</th>
                             <th scope="col">ID</th>
                             <th scope="col">Nombre</th>
                             <th scope="col">Total</th>
