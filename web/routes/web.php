@@ -43,8 +43,8 @@ require __DIR__.'/auth.php';
 Route::resource('products', ProductController::class)->middleware('auth');
 Route::resource('contracts', ContractController::class)->middleware('auth');
 Route::resource('employees', EmployeeController::class)->middleware('auth');
-Route::get('/employees/searchbydate', [EmployeeController::class, 'searchbydate'])->name('employees.searchbydate');
-Route::post('/employees/resultsbydate', [EmployeeController::class, 'contractsBtwDates'])->name('employees.contractsBtwDates');
+Route::get('/employees-search', [EmployeeController::class, 'searchdate'])->middleware('auth');
+Route::post('/employees-resultsbydate', [EmployeeController::class, 'contractsBtwDates'])->middleware('auth');
 
 
 

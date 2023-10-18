@@ -12,4 +12,8 @@ class Employee extends Model
     protected $fillable = [
         'name'
     ];
+
+    public function contracts(){
+        return $this->hasMany(Contract::class);
+    }
 }

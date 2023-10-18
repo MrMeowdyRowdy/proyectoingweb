@@ -86,8 +86,8 @@ class EmployeeController extends Controller
     {
         $sumaContratos = 0;
         $contratosPorEmp = [];
-        $contracts = Contract::with('employees')->whereHas('employees', function ($query) use( $request ) {
-            $query->whereBetween('creation', [$request->begin, $request->end]);
+        $contracts = Contract::with('employee')->whereHas('employee', function ($query) use( $request ) {
+            //$query->whereBetween('creation', [$request->begin, $request->end]);
         })->get();
         dd($contracts);
         foreach ($contracts as $contract) {
@@ -120,8 +120,8 @@ class EmployeeController extends Controller
         
     }
 
-    public function searchbydate(): View
+    public function searchdate(): View
     {
-        return view('employees.searchbydate');
+        return view('employees.searchdate');
     }
 }
