@@ -16,6 +16,7 @@ return new class extends Migration
             $table->integer("clientId");
             $table->date("creation");
             $table->float("price");
+            $table->timestamps();
 
         });
     }
