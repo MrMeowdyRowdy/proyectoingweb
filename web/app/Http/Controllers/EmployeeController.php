@@ -87,9 +87,9 @@ class EmployeeController extends Controller
         $sumaContratos = 0;
         $contratosPorEmp = [];
         $contracts = Contract::with('employee')->whereHas('employee', function ($query) use( $request ) {
-            //$query->whereBetween('creation', [$request->begin, $request->end]);
+            $query->whereBetween('creation', [$request->begin, $request->end]);
         })->get();
-        dd($contracts);
+
         foreach ($contracts as $contract) {
             $filteredObjects = array_filter($contratosPorEmp, function ($contratos) use ($contract) {
                 return $contratos->idemp === $contract->employeeId;
@@ -113,7 +113,7 @@ class EmployeeController extends Controller
             
         }
 
-        return view('employees.contractsBtwDates', [
+        return view('employees.resultsbydate', [
             'contratosPorEmp' => $contratosPorEmp
         ]);
         
