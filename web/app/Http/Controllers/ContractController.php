@@ -65,7 +65,7 @@ class ContractController extends Controller
         return redirect()->back()
                 ->withSuccess('El contrato ha sido actualizado satisfactoriamente.');
     }
-    }
+    
 
     /**
      * Remove the specified resource from storage.
