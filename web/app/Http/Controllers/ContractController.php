@@ -13,7 +13,7 @@ class ContractController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index() : View
     {
         return view('contracts.index', [
             'contracts' => Contract::latest()->paginate(5)
@@ -23,7 +23,7 @@ class ContractController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create() : View
     {
         return view('contracts.create');
     }
@@ -31,7 +31,7 @@ class ContractController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreContractRequest $request)
+    public function store(StoreContractRequest $request) : RedirectResponse
     {
         Contract::create($request->all());
         return redirect()->route('contracts.index')
@@ -41,7 +41,7 @@ class ContractController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Contract $contract)
+    public function show(Contract $contract) : View
     {
         return view('contracts.show', [
             'contract' => $contract
@@ -51,7 +51,7 @@ class ContractController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Contract $contract)
+    public function edit(Contract $contract) : View
     {
         return view('contracts.edit', [
             'contract' => $contract
@@ -61,7 +61,7 @@ class ContractController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateContractRequest $request, Contract $contract)
+    public function update(UpdateContractRequest $request, Contract $contract) : RedirectResponse
     {
         $contract->update($request->all());
         return redirect()->back()
@@ -72,7 +72,7 @@ class ContractController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Contract $contract)
+    public function destroy(Contract $contract) : RedirectResponse
     {
         $contract->delete();
         return redirect()->route('contracts.index')

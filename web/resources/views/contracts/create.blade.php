@@ -1,4 +1,4 @@
-@extends('contracts.layouts')
+@extends('products.layouts')
 
 @section('content')
 
@@ -8,14 +8,14 @@
         <div class="card">
             <div class="card-header">
                 <div class="float-start">
-                     Añadir un contrato nuevo
+                     Añadir un producto nuevo
                 </div>
                 <div class="float-end">
-                    <a href="{{ route('contracts.index') }}" class="btn btn-primary btn-sm">&larr; Atrás</a>
+                    <a href="{{ route('products.index') }}" class="btn btn-primary btn-sm">&larr; Atrás</a>
                 </div>
             </div>
             <div class="card-body">
-                <form action="{{ route('contracts.store') }}" method="post">
+                <form action="{{ route('products.store') }}" method="post">
                     @csrf
 
                     <div class="mb-3 row">
@@ -69,7 +69,7 @@
                     </div>
                     
                     <div class="mb-3 row">
-                        <input type="submit" class="col-md-3 offset-md-5 btn btn-primary" value="Añadir contrato">
+                        <input type="submit" class="col-md-3 offset-md-5 btn btn-primary" value="Añadir producto">
                     </div>
                     
                 </form>

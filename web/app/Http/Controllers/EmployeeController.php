@@ -13,7 +13,7 @@ class EmployeeController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index() : View
     {
         return view('employees.index', [
             'employees' => Employee::latest()->paginate(5)
