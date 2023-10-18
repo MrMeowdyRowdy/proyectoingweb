@@ -18,6 +18,7 @@
                 <table class="table table-striped table-bordered">
                     <thead>
                       <tr>
+                        <th scope="col">Numero</th>
                         <th scope="col">ID</th>
                         <th scope="col">Nombre</th>
                       </tr>
@@ -27,7 +28,7 @@
                         <tr>
                             <th scope="row">{{ $loop->iteration }}</th>
                             <td>{{ $employee->id }}</td>
-                            <td>{{ $employee->name }}</td>>
+                            <td>{{ $employee->name }}</td>
                             <td>
                                 <form action="{{ route('employees.destroy', $employee->id) }}" method="post">
                                     @csrf
