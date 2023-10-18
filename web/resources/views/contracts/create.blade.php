@@ -14,6 +14,7 @@
                     <a href="{{ route('contracts.index') }}" class="btn btn-primary btn-sm">&larr; Atrás</a>
                 </div>
             </div>
+            
             <div class="card-body">
                 <form action="{{ route('contracts.store') }}" method="post">
                     @csrf

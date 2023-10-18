@@ -33,6 +33,7 @@ class ContractController extends Controller
      */
     public function store(StoreContractRequest $request) : RedirectResponse
     {
+        dd($request);
         Contract::create($request->all());
         return redirect()->route('contracts.index')
                 ->withSuccess('Nuevo contrato añadido satisfactoriamente.');
