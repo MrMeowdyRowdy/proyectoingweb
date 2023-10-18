@@ -15,6 +15,7 @@
             <div class="card-header">Lista de empleados</div>
             <div class="card-body">
                 <a href="{{ route('employees.create') }}" class="btn btn-success btn-sm my-2"><i class="bi bi-plus-circle"></i> Añadir un nuevo empleado</a>
+                <a href="{{ route('employees.searchbydate') }}" class="btn btn-success btn-sm my-2"><i class="bi bi-plus-circle"></i> Buscar contratos por fechas</a>
                 <table class="table table-striped table-bordered">
                     <thead>
                       <tr>
