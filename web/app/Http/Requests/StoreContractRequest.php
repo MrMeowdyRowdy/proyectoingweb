@@ -23,7 +23,7 @@ class StoreContractRequest extends FormRequest
     {
         return [
             'clientId' => 'required|integer',
-            'creation' => 'required|date',
+            'creation' => 'required|date_format:Y-m-d',
             'price' => 'required|float|min:0.01|max:10000'
         ];
     }
