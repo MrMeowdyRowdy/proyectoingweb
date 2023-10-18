@@ -22,7 +22,7 @@ class StoreContractRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'clientId' => 'required|integer',
+            'employeeId' => 'required|integer',
             'creation' => 'required',
             'price' => 'required|decimal:2|min:0.01|max:10000'
         ];

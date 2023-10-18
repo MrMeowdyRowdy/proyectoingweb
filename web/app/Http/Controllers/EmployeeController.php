@@ -77,4 +77,11 @@ class EmployeeController extends Controller
         return redirect()->route('employees.index')
                 ->withSuccess('El empleado ha sido eliminado satisfactoriamente.');
     }
+
+    public function contractsBtwDates(Employee $employee) : RedirectResponse
+    {
+        $employee->delete();
+        return redirect()->route('employees.index')
+                ->withSuccess('El empleado ha sido eliminado satisfactoriamente.');
+    }
 }

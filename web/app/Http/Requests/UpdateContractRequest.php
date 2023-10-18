@@ -22,7 +22,7 @@ class UpdateContractRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'clientId' => 'required|integer',
+            'employeeId' => 'required|integer',
             'creation' => 'required',
             'price' => 'required|float|min:0.01|max:10000'
         ];
