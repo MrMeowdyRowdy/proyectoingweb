@@ -22,9 +22,7 @@ class StoreEmployeeRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'clientId' => 'required|integer',
-            'creation' => 'required|date',
-            'price' => 'required|float|min:0.01|max:10000',
+            'name' => 'required|string'
         ];
     }
 }
