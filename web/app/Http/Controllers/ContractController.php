@@ -35,7 +35,7 @@ class ContractController extends Controller
     {
         Contract::create($request->all());
         return redirect()->route('contracts.index')
-                ->withSuccess('nuevo contracto añadido satisfactoriamente.');
+                ->withSuccess('nuevo contrato añadido satisfactoriamente.');
     }
 
     /**
