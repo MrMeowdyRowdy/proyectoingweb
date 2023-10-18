@@ -31,7 +31,7 @@
                     <div class="mb-3 row">
                         <label for="creation" class="col-md-4 col-form-label text-md-end text-start">Fecha Creacion</label>
                         <div class="col-md-6">
-                          <input type="number" class="form-control @error('creation') is-invalid @enderror" id="creation" name="creation" value="{{ old('creation') }}">
+                          <input type="date" class="form-control @error('creation') is-invalid @enderror" id="creation" name="creation" value="{{ old('creation') }}">
                             @if ($errors->has('creation'))
                                 <span class="text-danger">{{ $errors->first('creation') }}</span>
                             @endif
