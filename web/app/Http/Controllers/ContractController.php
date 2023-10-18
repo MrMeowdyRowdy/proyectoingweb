@@ -76,6 +76,6 @@ class ContractController extends Controller
     {
         $contract->delete();
         return redirect()->route('contracts.index')
-                ->withSuccess('El contrato ha sido eliminaod satisfactoriamente.');
+                ->withSuccess('El contrato ha sido eliminado satisfactoriamente.');
     }
 }

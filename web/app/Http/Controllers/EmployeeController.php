@@ -75,6 +75,6 @@ class EmployeeController extends Controller
     {
         $employee->delete();
         return redirect()->route('employees.index')
-                ->withSuccess('El empleado ha sido eliminaod satisfactoriamente.');
+                ->withSuccess('El empleado ha sido eliminado satisfactoriamente.');
     }
 }
