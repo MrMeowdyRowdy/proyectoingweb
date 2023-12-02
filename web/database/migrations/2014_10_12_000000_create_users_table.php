@@ -13,10 +13,19 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
+            $table->string("nroDocIdentificacion")->unique();
+            $table->string("sede");
+            $table->string("apellido");
+            $table->string("name");
+            $table->string("tlfContacto");
+            $table->string("email")->unique();
+            $table->string("emailRackspace")->unique();
+            $table->boolean("fullTime");
+            $table->string("categoria");
+            $table->integer("horario");
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->smallInteger("role");
             $table->rememberToken();
             $table->timestamps();
         });
