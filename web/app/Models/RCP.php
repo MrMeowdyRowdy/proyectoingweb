@@ -10,16 +10,17 @@ class RCP extends Model
     use HasFactory;
 
     protected $fillable = [
+        'llamadaID',
         'tipo',
         'mensaje'
     ];
 
     public function user(){
-        return $this->belongsTo(User::class,'id');
+        return $this->hasOne(User::class);
     }
 
     public function llamada(){
-        return $this->belongsTo(Llamada::class,'id');
+        return $this->hasOne(Llamada::class);
     }
 
 

@@ -13,8 +13,4 @@ class Horario extends Model
         'horaFin'
     ];
 
-    public function course()
-    {
-        return $this->belongsTo(User::class, 'id'); // links this->course_id to courses.id
-    }
 }
