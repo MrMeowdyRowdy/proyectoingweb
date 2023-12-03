@@ -15,3 +15,10 @@ Laravel es un marco de trabajo para aplicaciones web que aplica un sintaxis eleg
 Laravel es accesible, poderoso y provee las herramientas necesarias para la creacion de grandes y robustas aplicaciones
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://www.netsolutions.com/insights/wp-content/uploads/2022/04/architecture-of-laravel-framework.webp" width="1020" alt="Laravel Logo"></a></p>
+
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/MrMeowdyRowdy/proyectoingweb/blob/main/web/Login.png" width="1020" alt="Laravel Logo"></a></p>
+Se utiliza la extension de Laravel "Breeze" para manejar la autenticación de usuarios y como middleware para proteger vistas y solicitar acceso o autenticación para poder entrar a estas. Esta autenticación hace uso de tokens CSRF y tokens de sesión para mantener al usuario autenticado y elevar al seguridad del programa. El flujo siendo usuario ingresa sesión, la vista solicitara al contorlador manejar el login y el controlador hace uso de la api de Breeze para autenticar al usuario con la base de datos local.
+
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://github.com/MrMeowdyRowdy/proyectoingweb/blob/main/web/ContratosEmpleados.png" width="1020" alt="Laravel Logo"></a></p>
+
+
